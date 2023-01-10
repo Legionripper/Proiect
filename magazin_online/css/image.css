@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     background: #e0e0e0;
+    
 }
 
 .innerContainerSingleItem{
@@ -33,6 +34,7 @@ body{
     object-position: center;
     height:300px;
     border-radius:25px;
+    
 }
 
 

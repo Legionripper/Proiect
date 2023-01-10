@@ -7,13 +7,13 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "magazin";
-// Create connection
+
 $conn = new mysqli($servername, $username, $password,$dbname);
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
- # echo "Connected successfully";
+
 
   
 
@@ -35,10 +35,10 @@ include("navbar.php");
     <div class="innerContainerSingleItem">
         <h3 style="text-align:left;"> <?php echo $nume; ?>  </h3>
         <img src=" <?php echo '/magazin_online/'.$linkImagine?> " class="imgSingleItem"/>
-        <p> pret: <?php echo $pret ?> </p> 
+        <p> pret: <?php echo $pret ?> lei </p> 
         <p>  <?php echo $descriere ?> </p>
         <p> <?php echo $descriereLunga ?> </p>
-        <a  href="/magazin_online/confirmacomanda.php" class="buyButton" >cumpara</a>
+        <a  href="/magazin_online/confirmacomanda.php" class="buyButton" >Cumpara</a>
     </div>
 </div>
 <?php 

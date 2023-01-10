@@ -97,18 +97,19 @@
     -webkit-animation:anim-shadow .5s ease-in-out forwards;
     animation:anim-shadow .5s ease-in-out forwards
 }
-@-webkit-keyframes anim-shadow{
-    to{
-        box-shadow:0 0 70px 25px;
-        opacity:0
-    }
-}
-@keyframes anim-shadow{
-    to{
-        box-shadow:0 0 70px 25px;
-        opacity:0
-    }
-}
+
+ img{
+ 
+    background-color: red;
+    position: relative;
+    animation-name: login;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+
+
+
 .symbol-input100{
     font-size:15px;
     display:-webkit-box;
@@ -172,6 +173,7 @@
 .login100-form-btn:hover{
     background:#333
 }
+
 @media (max-width:992px){
     .wrap-login100{
         padding:177px 90px 33px 85px

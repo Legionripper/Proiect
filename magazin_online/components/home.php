@@ -17,10 +17,10 @@ if ($conn->connect_error) {
   $result = $conn->query($sql);
   
   if ($result->num_rows > 0) {
-    // output data of each row
+  
     echo "<main class=\"wrapper\">
     <section class=\"breweries\" id=\"breweries\">
-    <h3>Oferte</h3>
+    <h3>Cele mai vandute</h3>
     <ul>
     ";
     while($row = $result->fetch_assoc()) {
@@ -36,7 +36,7 @@ if ($conn->connect_error) {
       <form action=\"/magazin_online/components/image.php\" method=\"post\" class=\"formCard\" >
       <input name=\"id\" id=\"id\" type=\"hidden\" style=\"display:none;\" value=\"".$row["Id"]."\">
       <button type=\"submit\" class=\"buttonCard\">Vezi detalii</button>".
-      "<span class=\"cuponPret\">".$row["Valoare"]." lei</span>
+      "<span class=\"cuponPret\">".$row["Valoare"]."lei</span>
       </form>
     </li>
       ";
@@ -55,7 +55,7 @@ if ($conn->connect_error) {
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
-    // output data of each row
+   
     echo "<main class=\"wrapper\">
     <section class=\"breweries\" id=\"breweries\">
     <h3>Toate</h3>

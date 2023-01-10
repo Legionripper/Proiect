@@ -1,7 +1,7 @@
 a {
     text-decoration: none;
     color: black;
-    border-radius: .25rem;
+    border-radius: 4px;
     text-align: center;
     display: inline-block;
     transition: all .3s;
@@ -9,29 +9,28 @@ a {
   
  
   
-  /* breweries styles */
   .breweries {
-    padding: 2rem;
+    padding: 32px;
 
   }
   
   .breweries > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 16px;
     list-style:none;
   }
   
   .breweries > ul > li {
-    border: 1px solid #E2E2E2;
-    border-radius: .5rem;
+    border: 1px solid black;
+    border-radius: 8px;
   }
   
   .breweries > ul > li > div {
     max-height: 220px;
     overflow: hidden;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     position: relative;
   }
   
@@ -50,18 +49,18 @@ a {
   
   .breweries > ul > li > div > div > h3 {
     color: white;
-    padding: .75rem;
-    font-size: 1.25rem;
+    padding: 12px;
+    font-size: 20px;
   }
   
   .breweries > ul > li > p {
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 1rem .75rem;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 10px;
     color: #666666;
   }
   
   .breweries > ul > li > a {
-    padding: .5rem 1rem;
-    margin: .5rem;
+    padding: 8px 16px;
+    margin: 8px;
   }

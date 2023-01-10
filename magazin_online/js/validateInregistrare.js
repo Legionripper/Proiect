@@ -90,10 +90,8 @@ const validateForm=()=>{
     let valid2= checkPrenume($('#prenume').val());
     let valid3= checkEmail($('#email').val());
     let valid4= checkConfirmaEmail($('#confirmaemail').val());
-    let valid5= checkParola($('#parola').val());
-    let valid6= checkConfirmaParola($('#confirmaparola').val());
+
     let valid7= checkAdresa($('#adresa').val());
     let valid8= checkVarsta($('#varsta').val());
-    return Boolean(valid1 && valid2 && valid3 && valid4 && valid5 && valid6
-    && valid7 && valid8);
+    return Boolean(valid1 && valid2 && valid3 && valid4 && valid7 && valid8);
 }

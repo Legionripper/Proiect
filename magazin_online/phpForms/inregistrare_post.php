@@ -11,7 +11,7 @@
     <div id="card_inregistrare">
         <div class="inner_card_inregistrare">
         <h3> Multumim ca v-ati autentificat</h3>
-        <p> Atat s-a putut e de buget</p>
+        <p> Contul Dumneavoastra a fost creat</p>
     </div>
     </div>
 </div>

@@ -15,9 +15,9 @@ include("../components/navbar.php");
             $username = "root";
             $password = "";
             $dbname = "magazin";
-            // Create connection
+           
             $conn = new mysqli($servername, $username, $password,$dbname);
-            // Check connection
+           
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
@@ -28,8 +28,8 @@ include("../components/navbar.php");
             $result = $conn->query($sql);
             if ($result->num_rows > 0){
                 $row= $result->fetch_assoc();
-                echo 'Bun venit, '.$row["Nume"].' '.$row["Prenume"].
-                '.<br/>Parola ta este '.$row["Parola"];
+                echo 'Bun venit, '.$row["Nume"].' '.$row["Prenume"];
+                //'.<br/>Parola ta este '.$row["Parola"];
             }
             else{
                echo "nu am gasit contul";
